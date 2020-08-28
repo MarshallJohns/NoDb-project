@@ -1,0 +1,98 @@
+[
+    {
+        "id": 0,
+        "partType": "motherBoard",
+        "chipset": "am4",
+        "name": "msi mag b550 tomahawk",
+        "image": "https://cdn.pcpartpicker.com/static/forever/images/product/52ee465cbd64b16145232d863524c066.256p.jpg",
+        "price": 179.99
+    },
+    {
+        "id": 1,
+        "partType": "motherBoard",
+        "chipset": "am4",
+        "name": "gigabyte b450m ds3h",
+        "image": "https://cdn.pcpartpicker.com/static/forever/images/product/176028811e50cad67b57ed0e604229c9.1600.jpg",
+        "price": 78.99
+    },
+    {
+        "id": 2,
+        "partType": "motherBoard",
+        "chipset": "LGA1151",
+        "name": "Asus Prime z390-A",
+        "image": "https://cdn.pcpartpicker.com/static/forever/images/product/9bf978a8545947c14c8ab7b7338f9ae2.1600.jpg",
+        "price": 169.99
+    },
+    {
+        "id": 3,
+        "partType": "motherBoard",
+        "chipset": "LGA1151",
+        "name": "gigabyte b365m ds3h",
+        "image": "https://cdn.pcpartpicker.com/static/forever/images/product/de8a63a66404b62463a5c4f898131b38.1600.jpg",
+        "price": 74.99
+    },
+    {
+        "id": 4,
+        "partType": "cpu",
+        "chipset": "amd",
+        "name": "AMD Ryzen 5 2600",
+        "image": "https://cdn.pcpartpicker.com/static/forever/images/product/55aea2dd64e2e3a3e3b1d678048d8d76.256p.jpg",
+        "price": 139.99
+    },
+    {
+        "id": 5,
+        "partType": "cpu",
+        "chipset": "amd",
+        "name": "AMD Ryzen 7 3700x",
+        "image": "https://cdn.pcpartpicker.com/static/forever/images/product/23cd3adfd50037c1b44d6d53edb15248.256p.jpg",
+        "price": 289.99
+    },
+    {
+        "id": 6,
+        "partType": "cpu",
+        "chipset": "intel",
+        "name": "Intel core i5-9600k",
+        "image": "https://cdn.pcpartpicker.com/static/forever/images/product/33f96aec821c5c10f4b1fd636a7d1881.256p.jpg",
+        "price": 192.99
+    },
+    {
+        "id": 7,
+        "partType": "cpu",
+        "chipset": "intel",
+        "name": "Intel core i7-9700k",
+        "image": "https://cdn.pcpartpicker.com/static/forever/images/product/3760e89d1820da393f084e2c18a62e3b.256p.jpg",
+        "price": 299.99
+    },
+    {
+        "id": 8,
+        "partType": "gpu",
+        "chipset": "nvidia",
+        "name": "Geforce RTX 2080 Ti",
+        "image": "https://cdn.pcpartpicker.com/static/forever/images/product/0174f5005fe9f34decdf2d379bfe7221.256p.jpg",
+        "price": 2324.99
+    },
+    {
+        "id": 9,
+        "partType": "gpu",
+        "chipset": "nvidia",
+        "name": "Geforce RTX 2070 SUPER",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/41mBMT6Uq9L.jpg",
+        "price": 499.99
+    },
+    {
+        "id": 10,
+        "partType": "gpu",
+        "chipset": "amd",
+        "name": "Radeon RX 5700XT",
+        "image": "https://m.media-amazon.com/images/I/91I+AqDuiML._AC_UY218_.jpg",
+        "price": 449.99
+    },
+    {
+        "id": 11,
+        "partType": "gpu",
+        "chipset": "amd",
+        "name": "Radeon RX 580",
+        "image": "https://m.media-amazon.com/images/I/81D46VNLb9L._AC_UY218_.jpg",
+        "price": 170.00
+    }
+]
