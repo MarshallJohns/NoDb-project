@@ -13,9 +13,9 @@ app.get('/api/parts', partCtrl.getPart)
 // Cart Controller 
 app.get('/api/cart', cartCtrl.getCart)
 app.post('/api/cart', cartCtrl.addToCart)
-app.put('/api/cart:cart_id', cartCtrl.changeQuantity)
+app.put('/api/cart/:cart_id', cartCtrl.changeQuantity)
 app.delete('/api/cart/:cart_id', cartCtrl.removeFromCart)
-app.delete('api/cart', cartCtrl.checkout)
+app.delete('/api/cart', cartCtrl.checkout)
 
 
 app.listen(SERVER_PORT, () => console.log(`Listening on port ${SERVER_PORT}`))

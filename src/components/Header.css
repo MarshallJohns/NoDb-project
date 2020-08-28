@@ -1,0 +1,31 @@
+.header{
+    box-sizing: border-box;
+    height: 15vh;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-right: 50px;
+    padding-left: 20px;
+
+    
+}
+
+.app-name {
+    font-size: 70px;
+}
+
+.noCart {
+    display: none;
+}
+
+.cart-btn{
+    outline: none;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 30px;
+    margin-bottom: 10px;
+
+}

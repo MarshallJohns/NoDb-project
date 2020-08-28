@@ -38,11 +38,12 @@ module.exports = {
 
         res.status(200).send(cart)
     },
+
     changeQuantity: (req, res) => {
         const { cart_id } = req.params
         const { action } = req.query
 
-        const index = cart.items.findIndex(element => element.id === +cart_id)
+        const index = cart.items.findIndex(element => element.cartId === +cart_id)
 
         if (index === -1) {
             return res.status(404).send('Part not found')
