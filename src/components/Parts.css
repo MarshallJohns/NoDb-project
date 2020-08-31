@@ -1,0 +1,44 @@
+.parts {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 85vh;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 5px;
+}
+
+.Part {
+    text-transform: uppercase;
+    margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.price{
+
+    display: flex;    
+    justify-content: center;
+    margin-top: 3px;
+}
+
+
+.Part > img {
+    width: 150px;
+    height: 150px;
+
+}
+
+.btn-container{
+    margin-top: 3px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.add-cart {
+    display: flex;
+    justify-content: center;
+    margin-top: 3px;
+}

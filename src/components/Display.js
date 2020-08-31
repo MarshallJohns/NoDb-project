@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Axios from 'axios'
 import Header from './Header'
+import Parts from './Parts'
 
 
 export default class Display extends Component {
@@ -10,6 +11,11 @@ export default class Display extends Component {
             parts: [],
             cart: { total: 0, items: [] }
         }
+
+        this.addToCart = this.addToCart.bind(this)
+        this.changeQuantity = this.changeQuantity.bind(this)
+        this.removeFromCart = this.removeFromCart.bind(this)
+        this.checkout = this.checkout.bind(this)
     }
 
     componentDidMount() {
@@ -49,9 +55,15 @@ export default class Display extends Component {
     }
 
     render() {
+
         return (
             <div>
                 <Header />
+                <Parts
+                    parts={this.state.parts}
+                    addToCart={this.addToCart}
+                />
+
             </div>
         )
     }

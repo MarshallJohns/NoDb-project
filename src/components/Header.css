@@ -16,6 +16,20 @@
     font-size: 70px;
 }
 
+.cart {
+    width: 25vw;
+    height: 84vh;
+    background-color: teal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: fixed;
+    top: 17vh;
+    right: 10px;
+    z-index: 1;
+}
+
 .noCart {
     display: none;
 }
