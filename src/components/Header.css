@@ -22,12 +22,17 @@
     background-color: teal;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
     position: fixed;
     top: 17vh;
     right: 10px;
     z-index: 1;
+}
+
+.cart > h2 {
+    margin-top: 5px;
+    font-size: 40px;
 }
 
 .noCart {
@@ -43,3 +48,67 @@
     margin-bottom: 10px;
 
 }
+
+.total{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    bottom:10px;
+}
+
+.total > button {
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 20px;
+    border: 2px solid black;
+    padding: 5px 10px;
+
+}
+
+.total > p {
+    margin-right: 40px;
+    font-size: 25px;
+}
+
+.cart-item {
+    width: 80%;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.cart-item > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+
+}
+
+.cart-item > p {
+    font-size: 1.2rem;
+
+}
+
+.cart-item > img {
+    height: 100px;
+    width: 100px;
+}
+
+.remove {
+   background-color: transparent; 
+   margin: 0 3px;
+   border-radius: 5px;
+   border: 2px solid black;
+   font-size: 15px;
+}
+
+.up-down{
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-size: 15px;
+}
+
+
+
+

@@ -66,7 +66,7 @@ module.exports = {
     removeFromCart: (req, res) => {
         const { cart_id } = req.params
 
-        const index = cart.items.find(element => element.cart_id === +cart_id)
+        const index = cart.items.findIndex(element => element.cartId === +cart_id)
 
         if (index === -1) {
             return res.status(404).send('Item not in cart')
@@ -76,7 +76,7 @@ module.exports = {
 
         updateCartTotal()
 
-        res.status(404).send(cart)
+        res.status(200).send(cart)
     },
     checkout: (req, res) => {
         cart.total = 0

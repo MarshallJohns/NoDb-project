@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import './Header.css'
-import Axios from 'axios'
-import cartItem from './cartItem'
+import CartItem from './CartItem'
 
 
 export default class Header extends Component {
@@ -25,12 +24,30 @@ export default class Header extends Component {
     }
 
     render() {
+        const { changeQuantity, removeFromCart, checkout, cart } = this.props
         return (
             <header className='header'>
                 <h1 className='app-name'>Build a Pc</h1>
                 <button onClick={this.handleCartDisplay} className='cart-btn'>Cart</button>
                 <div className={this.state.cartDisplay ? 'cart' : 'noCart'}>
-                    <cartItem />
+                    <h2>Your Cart</h2>
+                    {cart.items.map(element => {
+                        return (
+                            <CartItem
+                                changeQuantity={changeQuantity}
+                                removeFromCart={removeFromCart}
+                                key={element.cartId}
+                                data={element}
+
+                            />
+                        )
+                    })}
+
+                    <div className='total'>
+                        <p>Your total: {cart.total}</p>
+                        <button onClick={checkout}>Checkout</button>
+                    </div>
+
                 </div>
             </header>
         )

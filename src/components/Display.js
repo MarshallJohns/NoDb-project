@@ -31,9 +31,10 @@ export default class Display extends Component {
     }
 
     addToCart(id, quantity) {
-        Axios.post('/api/cart').then(res =>
-            this.setState({ cart: res })
+        Axios.post('/api/cart', { partId: id, quantity }).then(res =>
+            this.setState({ cart: res.data })
         )
+            .catch(err => console.log(err.message))
     }
 
     changeQuantity(cartId, action) {
@@ -55,10 +56,15 @@ export default class Display extends Component {
     }
 
     render() {
-
+        console.log(this.state.cart)
         return (
             <div>
-                <Header />
+                <Header
+                    cart={this.state.cart}
+                    checkout={this.checkout}
+                    removeFromCart={this.removeFromCart}
+                    changeQuantity={this.changeQuantity}
+                />
                 <Parts
                     parts={this.state.parts}
                     addToCart={this.addToCart}

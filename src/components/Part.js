@@ -27,11 +27,13 @@ export default class Part extends Component {
 
     render() {
         const { name, image, price, partType, chipset } = this.props.data
+
         return (
             <div className='Part'>
                 <img src={image} />
                 <p >{name}</p>
-                <p className='price'>${price}</p>
+                <p >Chipset: {chipset} </p>
+                <p >${price}</p>
 
                 <div className='btn-container'>
                     <button onClick={() => this.handleChangeQuantity('down')}>Less</button>
