@@ -8,19 +8,13 @@ export default class Header extends Component {
         super()
         this.state = {
             cartDisplay: false,
-            cart: { total: 0, items: [] }
+
         }
 
         this.handleCartDisplay = this.handleCartDisplay.bind(this)
     }
 
-    componentDidMount() {
-        Axios.get('/api/cart')
-            .then(res => {
-                this.setState({ cart: res.data })
-            })
-            .catch(err => console.log(err.message))
-    }
+
 
 
 
