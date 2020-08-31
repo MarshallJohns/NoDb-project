@@ -1,6 +1,6 @@
 .header{
     box-sizing: border-box;
-    height: 15vh;
+    height: 10vh;
     width: 100%;
     background-color: aqua;
     display: flex;
@@ -18,14 +18,14 @@
 
 .cart {
     width: 25vw;
-    height: 84vh;
+    height: 89vh;
     background-color: teal;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     position: fixed;
-    top: 17vh;
+    top: 11vh;
     right: 10px;
     z-index: 1;
 }
@@ -81,6 +81,7 @@
     flex-direction: column;
     justify-content: space-around;
     padding: 10px;
+    text-transform: uppercase;
 
 }
 

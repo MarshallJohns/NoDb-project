@@ -1,11 +1,33 @@
 .parts {
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
     width: 100%;
     height: 85vh;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     margin-top: 5px;
+    justify-content: space-between;
+}
+
+.parts > div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+    border-bottom: 5px solid black;
+    
+}
+
+.parts > div > p {
+    font-size: 40px;
+    align-self: flex-start;
+    text-decoration: underline;
+}
+
+hr {
+    
 }
 
 .Part {
@@ -37,8 +59,18 @@
     justify-content: space-evenly;
 }
 
+.btn-container > button {
+    border-radius: 5px;
+    background-color: transparent;
+    
+}
+
 .add-cart {
     display: flex;
     justify-content: center;
     margin-top: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+    
 }
+

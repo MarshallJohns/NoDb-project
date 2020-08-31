@@ -16,16 +16,49 @@ export default class Parts extends Component {
 
 
 
+
+
     render() {
+        const motherboard = this.props.parts.filter(element => element.partType === 'motherBoard')
+        const cpu = this.props.parts.filter(element => element.partType === 'cpu')
+        const gpu = this.props.parts.filter(element => element.partType === 'gpu')
+
         return (
             <div className='parts'>
-                {this.props.parts.map(element => {
-                    return <Part
-                        key={element.id}
-                        data={element}
-                        addToCart={this.props.addToCart} />
+                <div>
+                    <p>Motherboards:</p>
+                    {motherboard.map(element => {
+                        return <Part
+                            key={element.id}
+                            data={element}
+                            addToCart={this.props.addToCart} />
 
-                })}
+                    })}
+                </div>
+
+                <div>
+                    <p>Processors:</p>
+                    {cpu.map(element => {
+                        return <Part
+                            key={element.id}
+                            data={element}
+                            addToCart={this.props.addToCart} />
+
+                    })}
+                </div>
+                <hr />
+                <div>
+                    <p>Graphics Cards:</p>
+                    {gpu.map(element => {
+                        return <Part
+                            key={element.id}
+                            data={element}
+                            addToCart={this.props.addToCart} />
+
+                    })}
+                </div>
+
+
             </div>
         )
     }
